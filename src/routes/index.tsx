@@ -11,10 +11,6 @@ export const Route = createFileRoute("/")({
 function SplashPage() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setTimeout(() => navigate({ to: "/login" }), 2200);
-    return () => clearTimeout(timer);
-  }, [navigate]);
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-md flex-col items-center justify-center gap-6 px-6 text-center">
@@ -31,7 +27,7 @@ function SplashPage() {
         <span>🕹️</span>
         <span>📱</span>
       </div>
-      <PixelButton color="yellow" onClick={() => navigate({ to: "/login" })}>
+      <PixelButton color="yellow" onClick={() => navigate({ to: "/home" })}>
         Press Start
       </PixelButton>
     </main>
