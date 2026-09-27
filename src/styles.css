@@ -1,0 +1,121 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * TechRoots design system.
+ * Purple background, ivory surfaces, dark outlines and four retro accents.
+ * Every colour used in the app comes from these tokens.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--card);
+  --color-popover-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-ivory: var(--ivory);
+  --color-purple-deep: var(--purple-deep);
+  --color-pink: var(--pink);
+  --color-aqua: var(--aqua);
+  --color-yellow: var(--yellow);
+  --color-orange: var(--orange);
+
+  --font-display: "Press Start 2P", "Courier New", monospace;
+  --font-sans: "Outfit", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 1.1rem;
+
+  --ink: oklch(0.2 0.05 292);
+  --ivory: oklch(0.97 0.022 92);
+  --purple-deep: oklch(0.25 0.12 300);
+
+  --background: oklch(0.38 0.16 302);
+  --foreground: oklch(0.97 0.022 92);
+  --card: oklch(0.97 0.022 92);
+  --card-foreground: oklch(0.2 0.05 292);
+  --primary: oklch(0.72 0.19 5);
+  --primary-foreground: oklch(0.2 0.05 292);
+  --secondary: oklch(0.8 0.14 175);
+  --secondary-foreground: oklch(0.2 0.05 292);
+  --muted: oklch(0.32 0.12 301);
+  --muted-foreground: oklch(0.82 0.04 300);
+  --accent: oklch(0.87 0.16 92);
+  --accent-foreground: oklch(0.2 0.05 292);
+  --destructive: oklch(0.62 0.21 24);
+  --destructive-foreground: oklch(0.97 0.022 92);
+  --border: oklch(0.2 0.05 292);
+  --input: oklch(0.2 0.05 292);
+  --ring: oklch(0.8 0.14 175);
+
+  --pink: oklch(0.72 0.19 5);
+  --aqua: oklch(0.8 0.14 175);
+  --yellow: oklch(0.87 0.16 92);
+  --orange: oklch(0.74 0.17 52);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    /* subtle CRT scanlines over the purple background */
+    background-image: repeating-linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--ink) 8%, transparent) 0px,
+      color-mix(in oklab, var(--ink) 8%, transparent) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  }
+}
+
+/* Soft solid shadow used on all cards and buttons. */
+@utility shadow-solid {
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+
+@utility shadow-solid-sm {
+  box-shadow: 2px 2px 0 0 var(--ink);
+}
+
+@utility press {
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+  &:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 0 var(--ink);
+  }
+}
