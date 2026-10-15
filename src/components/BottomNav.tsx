@@ -2,10 +2,10 @@ import { Link } from "@tanstack/react-router";
 
 const tabs = [
   { to: "/home", label: "Eras", icon: "🗺️" },
-  { to: "/rewards", label: "Rewards", icon: "🎁" },
-  { to: "/shop", label: "Shop", icon: "🛍️" },
-  { to: "/achievements", label: "Badges", icon: "🏅" },
-  { to: "/profile", label: "Profile", icon: "🙂" },
+  { to: "/rewards", label: "Prêmios", icon: "🎁" },
+  { to: "/shop", label: "Loja", icon: "🛍️" },
+  { to: "/achievements", label: "Medalhas", icon: "🏅" },
+  { to: "/profile", label: "Perfil", icon: "🙂" },
 ] as const;
 
 export default function BottomNav() {
