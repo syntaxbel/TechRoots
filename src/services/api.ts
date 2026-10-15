@@ -41,7 +41,7 @@ export function submitQuiz(eraId: string, correct: number, total: number): QuizR
     eraName: era ? era.name : "Unknown era",
     correct,
     total,
-    xpEarned: correct * 20,
+    xpEarned: correct * 35,
     bitsEarned: correct * 8,
   };
 }
