@@ -112,6 +112,12 @@ Características:
 
 ## 🚀 Como executar
 
+### Pré-Requisitos
+
+* Node.js instalado (versão compatível com o projeto)
+* Git instalado
+
+### Instalação
 ```bash
 # Clonar o repositório
 git clone https://github.com/seu-usuario/TechRoots.git
@@ -125,6 +131,10 @@ npm install
 # Executar
 npx expo start
 ```
+
+### Observação para Windows PowerShell: 
+
+Se aparecer um erro informando que a execução de npm.ps1 foi bloqueada, tente executar npm.cmd install no lugar de npm install. A mesma alternativa vale para outros comandos do npm e do npx, acrescentando .cmd ao nome do comando.
 
 ---
 
