@@ -103,9 +103,6 @@ function ProfilePage() {
         </ul>
       </PixelCard>
 
-      <PixelButton color="ivory" full onClick={() => navigate({ to: "/login" })}>
-        Log out
-      </PixelButton>
     </AppShell>
   );
 }

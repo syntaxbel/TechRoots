@@ -92,12 +92,6 @@ function RegisterPage() {
         </form>
       </PixelCard>
 
-      <p className="text-center text-sm text-muted-foreground">
-        Already a player?{" "}
-        <Link to="/login" className="font-bold text-yellow underline">
-          Log in
-        </Link>
-      </p>
     </main>
   );
 }
