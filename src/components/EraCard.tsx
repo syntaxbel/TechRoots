@@ -38,10 +38,10 @@ export default function EraCard({ era, unlocked, completion }: Props) {
 
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-bold">
             <span className="rounded-full border-2 border-ink bg-ivory px-2 py-0.5">
-              💎 {era.collectibles} collectibles
+              💎 {era.collectibles} coletáveis
             </span>
             <span className="rounded-full border-2 border-ink bg-ivory px-2 py-0.5">
-              ⚡ up to {era.questions.length * 20} XP
+              ⚡ até {era.questions.length * 20} XP
             </span>
           </div>
 
@@ -49,8 +49,7 @@ export default function EraCard({ era, unlocked, completion }: Props) {
             <p className="mt-3 text-sm font-bold text-ink">Tap to start the quiz →</p>
           ) : (
             <p className="mt-3 text-sm font-medium text-card-foreground/70">
-              Reach level {era.requiredLevel} to unlock this era. Earn XP in the eras you already
-              have!
+              Alcance o nível {era.requiredLevel} para desbloquear essa era. Conquiste XP nas eras que você já possui!
             </p>
           )}
         </div>
