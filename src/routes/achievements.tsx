@@ -22,8 +22,8 @@ function AchievementsPage() {
 
   return (
     <AppShell
-      title="Badges"
-      subtitle={`${unlockedAchievements.length} of ${achievements.length} unlocked`}
+      title="Medalhas"
+      subtitle={`${unlockedAchievements.length} de ${achievements.length} desbloqueadas`}
     >
       <ul className="flex flex-col gap-3">
         {achievements.map((achievement) => {

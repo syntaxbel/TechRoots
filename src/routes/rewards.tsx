@@ -26,13 +26,13 @@ function RewardsPage() {
   const playedEras = eras.filter((era) => player.completion[era.id] !== undefined);
 
   return (
-    <AppShell title="Rewards" subtitle="Everything you collected so far.">
+    <AppShell title="Prêmios" subtitle="Tudo que você coletou até agora.">
       {lastResult ? (
         <PixelCard className="mb-5 bg-yellow">
-          <p className="font-display text-[12px] leading-relaxed">Quiz complete!</p>
+          <p className="font-display text-[12px] leading-relaxed">Quiz completo!</p>
           <p className="mt-3 text-sm font-bold">{lastResult.eraName}</p>
           <p className="mt-1 text-sm">
-            {lastResult.correct} / {lastResult.total} correct answers
+            {lastResult.correct} / {lastResult.total} respostas corretas
           </p>
           <div className="mt-3 flex gap-2 text-sm font-bold">
             <span className="rounded-full border-2 border-ink bg-ivory px-3 py-1">
@@ -44,27 +44,27 @@ function RewardsPage() {
           </div>
           <div className="mt-4">
             <PixelButton color="pink" onClick={() => navigate({ to: "/shop" })}>
-              Spend Bits
+              Bits gastos
             </PixelButton>
           </div>
         </PixelCard>
       ) : (
         <PixelCard className="mb-5">
           <p className="text-sm">
-            No rewards yet. Finish a quiz in any unlocked era to earn XP and Bits.
+            Sem prêmios ainda. Termine um quiz em qualquer era desbloqueada para ganhar XP e Bits.
           </p>
           <div className="mt-4">
             <PixelButton color="aqua" onClick={() => navigate({ to: "/home" })}>
-              Choose an era
+              Escolha uma era
             </PixelButton>
           </div>
         </PixelCard>
       )}
 
-      <h2 className="mb-3 font-display text-[12px] leading-relaxed">Era results</h2>
+      <h2 className="mb-3 font-display text-[12px] leading-relaxed">Resultados de Eras</h2>
 
       {playedEras.length === 0 ? (
-        <p className="text-sm text-muted-foreground">Your finished eras will appear here.</p>
+        <p className="text-sm text-muted-foreground">Suas eras terminadas vão aparecer aqui.</p>
       ) : (
         <ul className="flex flex-col gap-3">
           {playedEras.map((era) => (

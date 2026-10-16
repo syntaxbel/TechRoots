@@ -14,7 +14,7 @@ export const Route = createFileRoute("/profile")({
       { title: "Profile — TechRoots" },
       { name: "description", content: "Your level, XP, Bits, badges and unlocked eras." },
       { property: "og:title", content: "Profile — TechRoots" },
-      { property: "og:description", content: "Your level, XP, Bits, badges and unlocked eras." },
+      { property: "og:description", content: "Seu nível, XP, Bits, medalhas e eras desbloqueadas." },
     ],
   }),
   component: ProfilePage,
@@ -31,7 +31,7 @@ function ProfilePage() {
       : Math.round((player.correctAnswers / (player.quizzesTaken * 3)) * 100);
 
   return (
-    <AppShell title="Profile" subtitle="Your journey so far." showStats={false}>
+    <AppShell title="Perfil" subtitle="Sua jornada até agora." showStats={false}>
       <PixelCard className="mb-4">
         <div className="flex items-center gap-4">
           <span className="grid h-16 w-16 place-items-center rounded-2xl border-2 border-ink bg-pink text-3xl">
@@ -58,20 +58,20 @@ function ProfilePage() {
       </PixelCard>
 
       <PixelCard className="mb-4">
-        <h2 className="font-display text-[12px] leading-relaxed">Statistics</h2>
+        <h2 className="font-display text-[12px] leading-relaxed">Estatísticas</h2>
         <ul className="mt-3 flex flex-col gap-2 text-sm">
-          <li>Quizzes finished: {player.quizzesTaken}</li>
-          <li>Correct answers: {player.correctAnswers}</li>
-          <li>Accuracy: {accuracy}%</li>
+          <li>Quizzes finalizados: {player.quizzesTaken}</li>
+          <li>Respostas corretas: {player.correctAnswers}</li>
+          <li>Acurácia: {accuracy}%</li>
           <li>
-            Eras unlocked: {unlocked.length} / {eras.length}
+            Eras desbloqueadas: {unlocked.length} / {eras.length}
           </li>
-          <li>Items owned: {player.ownedItems.length}</li>
+          <li>Items comprados: {player.ownedItems.length}</li>
         </ul>
       </PixelCard>
 
       <PixelCard className="mb-4">
-        <h2 className="font-display text-[12px] leading-relaxed">Unlocked eras</h2>
+        <h2 className="font-display text-[12px] leading-relaxed">Eras desbloqueadas</h2>
         <ul className="mt-3 flex flex-wrap gap-2">
           {unlocked.map((name) => (
             <li
@@ -86,7 +86,7 @@ function ProfilePage() {
 
       <PixelCard className="mb-5">
         <h2 className="font-display text-[12px] leading-relaxed">
-          Badges ({unlockedAchievements.length}/{achievements.length})
+          Medalhas ({unlockedAchievements.length}/{achievements.length})
         </h2>
         <ul className="mt-3 flex flex-wrap gap-2 text-2xl">
           {achievements.map((achievement) => (

@@ -32,19 +32,19 @@ function HomePage() {
 
   return (
     <AppShell
-      title={`Hi, ${player.username}`}
-      subtitle="Pick an era and travel through computing history."
+      title={`Olá, ${player.username}`}
+      subtitle="Escolha uma era e viaje pela história da computação!"
     >
       <PixelCard className="mb-5">
-        <p className="font-display text-[12px] leading-relaxed">Level {level}</p>
+        <p className="font-display text-[12px] leading-relaxed">Nível {level}</p>
         <p className="mt-2 text-sm">
-          {xpIntoLevel} / {XP_PER_LEVEL} XP to level {level + 1}
+          {xpIntoLevel} / {XP_PER_LEVEL} XP para o nível {level + 1}
         </p>
         <div className="mt-3">
           <ProgressBar value={(xpIntoLevel / XP_PER_LEVEL) * 100} color="pink" />
         </div>
         <p className="mt-3 text-sm text-card-foreground/70">
-          {unlockedCount} of {eras.length} eras unlocked
+          {unlockedCount} de {eras.length} eras desbloqueadas
         </p>
       </PixelCard>
 

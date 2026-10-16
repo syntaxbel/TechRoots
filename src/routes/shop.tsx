@@ -33,7 +33,7 @@ function ShopPage() {
   }
 
   return (
-    <AppShell title="Bit Shop" subtitle="Cosmetic items only — no real money here.">
+    <AppShell title="Loja de Bits" subtitle="Somente itens cosméticos — sem dinheiro real aqui!">
       {message ? (
         <PixelCard className="mb-4 bg-aqua">
           <p className="text-sm font-bold">{message}</p>
@@ -64,7 +64,7 @@ function ShopPage() {
                         Use
                       </PixelButton>
                     ) : (
-                      <p className="text-sm font-bold text-card-foreground/70">Owned ✓</p>
+                      <p className="text-sm font-bold text-card-foreground/70">Comprado ✓</p>
                     )
                   ) : (
                     <PixelButton

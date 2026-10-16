@@ -37,9 +37,9 @@ function QuizPage() {
     return (
       <main className="mx-auto max-w-md px-4 py-10">
         <PixelCard>
-          <p className="font-bold">This era does not exist.</p>
+          <p className="font-bold">Essa era não existe.</p>
           <div className="mt-4">
-            <PixelButton onClick={() => navigate({ to: "/home" })}>Back to eras</PixelButton>
+            <PixelButton onClick={() => navigate({ to: "/home" })}>De volta às eras</PixelButton>
           </div>
         </PixelCard>
       </main>
@@ -52,11 +52,11 @@ function QuizPage() {
         <PixelCard>
           <p className="font-display text-[12px] leading-relaxed">Era locked 🔒</p>
           <p className="mt-3 text-sm">
-            Reach level {era.requiredLevel} to open {era.name}. Finish quizzes in your unlocked eras
-            to earn more XP.
+            Alcance o nível {era.requiredLevel} para abrir {era.name}. Termine quizzesnas suas eras desbloqueadas
+            para ganhar mais XP.
           </p>
           <div className="mt-4">
-            <PixelButton onClick={() => navigate({ to: "/home" })}>Back to eras</PixelButton>
+            <PixelButton onClick={() => navigate({ to: "/home" })}>De volta às eras</PixelButton>
           </div>
         </PixelCard>
       </main>
@@ -91,12 +91,12 @@ function QuizPage() {
         onClick={() => navigate({ to: "/home" })}
         className="mb-4 text-sm font-bold text-muted-foreground"
       >
-        ← Leave quiz
+        ← Sair do quiz
       </button>
 
       <h1 className="font-display text-[13px] leading-relaxed">{era.name}</h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        Question {questionIndex + 1} of {era.questions.length}
+        Pergunta {questionIndex + 1} de {era.questions.length}
       </p>
 
       <div className="mt-3">
