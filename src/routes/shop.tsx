@@ -73,7 +73,7 @@ function ShopPage() {
                       disabled={!affordable}
                       onClick={() => handleBuy(item)}
                     >
-                      {affordable ? "Buy" : "Need Bits"}
+                      {affordable ? "Comprar" : "Faltam Bits"}
                     </PixelButton>
                   )}
                 </div>
