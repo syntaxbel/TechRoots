@@ -18,7 +18,7 @@ export default function AppShell({ title, subtitle, children, showStats = true }
   return (
     <div className="mx-auto min-h-screen w-full max-w-md px-4 pb-28 pt-6">
       <header className="mb-5">
-        <h1 className="font-display text-xl leading-relaxed text-foreground">{title}</h1>
+        <h1 className="font-display text-xl leading-relaxed text-ink">{title}</h1>
         {subtitle ? <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p> : null}
         {showStats ? (
           <div className="mt-4 flex flex-wrap gap-2">

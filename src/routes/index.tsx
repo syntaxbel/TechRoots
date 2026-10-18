@@ -17,7 +17,7 @@ function SplashPage() {
       <div className="grid h-28 w-28 place-items-center rounded-3xl text-5xl box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);">
         <img src={logo} alt="TechRoots Logo" className="h-24 w-26" />
       </div>
-      <h1 className="font-display text-2xl leading-relaxed">TechRoots</h1>
+      <h1 className="font-display text-2xl leading-relaxed text-ink">TechRoots</h1>
       <p className="max-w-xs text-sm text-muted-foreground">
         Uma visão dinamica sobre a história da tecnologia.
       </p>

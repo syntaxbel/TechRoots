@@ -61,7 +61,7 @@ function RewardsPage() {
         </PixelCard>
       )}
 
-      <h2 className="mb-3 font-display text-[12px] leading-relaxed">Resultados de Eras</h2>
+      <h2 className="mb-3 font-display text-[12px] leading-relaxed text-ink">Resultados de Eras</h2>
 
       {playedEras.length === 0 ? (
         <p className="text-sm text-muted-foreground">Suas eras terminadas vão aparecer aqui.</p>
