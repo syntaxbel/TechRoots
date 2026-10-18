@@ -12,7 +12,7 @@ export const Route = createFileRoute("/quiz/$eraId")({
     meta: [
       { title: "Era quiz — TechRoots" },
       { name: "description", content: "Responda perguntas sobre esta era para ganhar XP e Bits." },
-      { property: "og:title", content: "Era quiz — TechRoots" },
+      { property: "og:title", content: "Era quiz: TechRoots" },
       {
         property: "og:description",
         content: "Responda perguntas sobre esta era para ganhar XP e Bits.",

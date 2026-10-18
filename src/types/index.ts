@@ -12,7 +12,6 @@ export type Question = {
 export type Era = {
   id: string;
   name: string;
-  years: string;
   icon: string; // pixel-ish emoji used as icon
   description: string;
   requiredLevel: number;
