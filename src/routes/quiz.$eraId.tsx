@@ -11,11 +11,11 @@ export const Route = createFileRoute("/quiz/$eraId")({
   head: () => ({
     meta: [
       { title: "Era quiz — TechRoots" },
-      { name: "description", content: "Answer questions about this era to earn XP and Bits." },
+      { name: "description", content: "Responda perguntas sobre esta era para ganhar XP e Bits." },
       { property: "og:title", content: "Era quiz — TechRoots" },
       {
         property: "og:description",
-        content: "Answer questions about this era to earn XP and Bits.",
+        content: "Responda perguntas sobre esta era para ganhar XP e Bits.",
       },
     ],
   }),
@@ -50,9 +50,9 @@ function QuizPage() {
     return (
       <main className="mx-auto max-w-md px-4 py-10">
         <PixelCard>
-          <p className="font-display text-[12px] leading-relaxed">Era locked 🔒</p>
+          <p className="font-display text-[12px] leading-relaxed">Era bloqueada 🔒</p>
           <p className="mt-3 text-sm">
-            Alcance o nível {era.requiredLevel} para abrir {era.name}. Termine quizzesnas suas eras desbloqueadas
+            Alcance o nível {era.requiredLevel} para abrir {era.name}. Termine quizzes nas suas eras desbloqueadas
             para ganhar mais XP.
           </p>
           <div className="mt-4">
@@ -135,7 +135,7 @@ function QuizPage() {
         {isAnswered ? (
           <div className="mt-4 rounded-xl border-2 border-ink bg-yellow p-3">
             <p className="text-sm font-bold text-ink">
-              {selected === question.correctIndex ? "Correct! +20 XP" : "Not this time."}
+              {selected === question.correctIndex ? "Correto! +20 XP" : "Não dessa vez."}
             </p>
             <p className="mt-1 text-sm text-ink/80">{question.funFact}</p>
           </div>
@@ -145,7 +145,7 @@ function QuizPage() {
       {isAnswered ? (
         <div className="mt-5">
           <PixelButton color="pink" full onClick={handleNext}>
-            {isLast ? "See rewards" : "Next question"}
+            {isLast ? "Ver recompensas" : "Próxima pergunta"}
           </PixelButton>
         </div>
       ) : null}

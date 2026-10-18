@@ -53,11 +53,11 @@
 :root {
   --radius: 1.1rem;
 
-  --ink: oklch(0.2 0.05 292);
+  --ink: oklch(15.084% 0.03047 154.852);
   --ivory: oklch(0.97 0.022 92);
-  --purple-deep: oklch(0.25 0.12 300);
+  --purple-deep: oklch(33.069% 0.10352 143.357);
 
-  --background: oklch(0.38 0.16 302);
+  --background: oklch(77.861% 0.06985 132.68);
   --foreground: oklch(0.97 0.022 92);
   --card: oklch(0.97 0.022 92);
   --card-foreground: oklch(0.2 0.05 292);

@@ -4,7 +4,7 @@ import type { Era } from "@/types";
 export const eras: Era[] = [
   {
     id: "birth-of-computing",
-    name: "Nascimento da Computação",
+    name: "A evolução dos hardwares",
     years: "1830 - 1950",
     icon: "🖩",
     description: "Engrenagens, cartões perfurados e os primeiros cérebros eletrônicos.",
@@ -14,14 +14,14 @@ export const eras: Era[] = [
     questions: [
       {
         id: "q1",
-        prompt: "Quem projetou a máquina analítica?",
-        options: ["Alan Turing", "Charles Babbage", "Grace Hopper", "John von Neumann"],
-        correctIndex: 1,
-        funFact: "Babbage o projetou em 1837, mas nunca foi terminado durante sua vida. Com seus cartões perfurados, poderia fazer qualquer conta!",
+        prompt: "Como os disquetes armazenavam informações?",
+        options: ["A) Por meio de armazenamento magnético.", "B) Por meio de um laser.", "C) Por meio da internet.", "D) Por meio da memória RAM."],
+        correctIndex: 0,
+        funFact: "Os disquetes utilizavam uma superfície magnética para registrar e armazenar os dados.",
       },
       {
         id: "q2",
-        prompt: "Ada Lovelace ié lembrada como a primeira...",
+        prompt: "Ada Lovelace é lembrada como a primeira...",
         options: ["Vendedora de computador", "Programadora", "Engenheira de Hardware", "Hacker"],
         correctIndex: 1,
         funFact: "Suas notas na Máquina Analítica continham o primeiro algoritmo já publicado.",
