@@ -94,7 +94,7 @@ function QuizPage() {
         ← Sair do quiz
       </button>
 
-      <h1 className="font-display text-[13px] leading-relaxed">{era.name}</h1>
+      <h1 className="font-display text-[13px] leading-relaxed text-ink">{era.name}</h1>
       <p className="mt-2 text-sm text-muted-foreground">
         Pergunta {questionIndex + 1} de {era.questions.length}
       </p>
