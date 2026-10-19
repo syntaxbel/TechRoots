@@ -19,7 +19,7 @@ export function register(username: string, _email: string, _password: string) {
 export function getProfile(): Player {
   return {
     username: "player",
-    avatar: "👾",
+    avatar: "👤",
     xp: 0,
     bits: 60,
     completion: {},
