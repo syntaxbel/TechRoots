@@ -28,7 +28,7 @@ function SplashPage() {
         <span>📱</span>
       </div>
       <PixelButton color="yellow" onClick={() => navigate({ to: "/home" })}>
-        Press Start
+        Aperte Começar
       </PixelButton>
     </main>
   );
