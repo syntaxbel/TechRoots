@@ -29,7 +29,6 @@ export default function EraCard({ era, unlocked, completion }: Props) {
               {unlocked ? `${completion}%` : `LV ${era.requiredLevel}`}
             </span>
           </div>
-          <p className="mt-1 text-xs text-card-foreground/70">{era.years}</p>
           <p className="mt-2 text-sm">{era.description}</p>
 
           <div className="mt-3">

@@ -9,7 +9,6 @@ import { register } from "@/services/api";
 export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
-      { title: "Create account — TechRoots" },
       { name: "description", content: "Create your TechRoots player and start earning XP." },
       { property: "og:title", content: "Create account — TechRoots" },
       {
